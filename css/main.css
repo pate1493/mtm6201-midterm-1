@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body {
+    background-color: #f4f0e9;
+    color: #333;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 4rem 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2%;
+}
+
+.logo-img {
+    max-width: 100%;
+    height: auto;
+    margin-right: -2rem;
+}
+
+.nav {
+    display: flex;
+    gap: 3rem;
+}
+
+.content{
+    font-size: 2 rem;
+    transition: color 0.3s;
+    text-decoration: none;
+    background-color: black;
+}
+.nav a:hover {
+    color: #374151;
+}
+
+.main {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(40%);
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 1.5rem;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.main-txt {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.explore {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s;
+}
+
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f4f0e9;
+    text-align: center;
+}
+
+.sec-title {
+    font-size: 1.5rem;
+    color: #9f7332;
+    margin-top: 1rem;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.offer {
+    background-color: #f4f0e9;
+    padding: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.feat {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem;
+}
+
+.feat:hover {
+    transform: translateY(-5%);
+}
+
+.feat-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.feat-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.feat-txt {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.menu {
+    position: relative;
+    background-color: #9f7332;
+    padding: 2rem;
+    text-align: center;
+}
+
+.menu-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+}
+
+.menu-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 2rem 0;
+}
+
+.menu-title, .loc-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-sub, .loc-sub {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.btn-menu, .btn-loc {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn-menu:hover, .btn-loc:hover {
+    background-color: #ddd;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f4f0e9;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-sub {
+    font-size: 1.125rem;
+    color: #9f7332;
+    margin-bottom: 1rem;
+}
+
+.learn {
+    background-color: #120b05;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.learn:hover {
+    background-color: #1d120a;
+}
+
+.testimonials {
+    background-color: #f4f0e9;
+    text-align: center;
+    padding: 2rem;
+}
+
+.test-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.test-subtitle {
+    font-size: 1.25rem;
+    color: #9f7332;
+    margin-bottom: 2rem;
+}
+
+.test-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.test-item {
+    text-align: center;
+}
+
+.test-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #120b05;
+    color: white;
+}
